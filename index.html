@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo práctico HTML</title>
+    <style>
+        table{
+            width: 30%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 3px solid black;
+            padding: 6px;
+            text-align: start;
+        }
+        body{
+            margin:10px;
+            padding: 0;
+        }
+        footer{
+            background-color: rgb(226, 155, 240);
+            text-align: center;
+            padding: 10xp;
+        }
+        main{
+            padding: 10xp;    
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Encabezado principal</h1>
+        <nav>
+            <ul>
+                <li> <a href= #Estructura >Estructura</a> </li>
+                <li> <a href= #Encabezados >Encabezados y propiedades del texto</a> </li>
+                <li> <a href= #Divisiones >Divisiones y agrupaciones de contenido</a> </li>
+                <li> <a href= #Enlaces >Enlaces y listas</a> </li>
+                <li> <a href= #Multimedia >Elementos multimedia</a> </li>
+                <li> <a href= #Tablas >Tablas</a> </li>
+                <li> <a href= #Formularios >Formularios</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+
+        <!--Encabezados  -->
+        <section id="Estructura">
+            <h2>1. Estructura Básica del Documento HTML</h2> 
+            <p>
+                Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título.
+            </p>
+        </section>
+        <!-- Estilos -->
+        <section id="Encabezados">
+            <h2>2. Encabezados y Propiedades del Texto</h2>
+            <h3>  <b>Este es un texto en negrita.</b> </h3>
+            <h4> <em>Este es un texto en cursiva.</em> </h4>
+            <h5> <u>Este es un texto subrayado.</u> </h5>
+            <h6> <mark> Este es un texto resaltado. <mark> </h6>
+        </section>
+        <!-- Agrupaciones div -->
+        <section id="Divisiones">
+             <h2>3. Divisiones y Agrupación de Contenido</h2>
+            <div>
+                <h3>Sección 1</h3>
+                <p>
+                    Contenido de la primera sección agrupada en un div.
+                </p>
+            </div>                
+            <div>
+                <h3>Sección 2</h3>
+                <p>
+                    Contenido de la segunda sección agrupada en un div. 
+                </p>
+            </div>
+        </section>
+        <!-- Enlaces -->
+        <section id="Enlaces">
+            <h2>4. Enlaces y Listas</h2>
+            <div>
+                <p>
+                    Visita nuestro <a href="https://www.google.com" target="_blank" >sitio web</a> para más información.
+                </p>
+            </div>
+            
+            <article>
+                <p>
+                    Enlaces internos:
+                </p>
+                <nav>
+                    <ul>
+                        <li> <a href= #Estructura >Ir a estructura</a> </li>
+                        <li> <a href= #Encabezados >Ir a encabezados y propiedades del texto</a> </li>
+                        <li> <a href= #Multimedia >Ir a elementos multimedia</a> </li>
+                    </ul>
+                </nav>
+            </article>
+        <!-- Listas -->
+            <article>
+                <p>
+                    Lista desordenada:
+                </p>
+                <ul>
+                    <li>Primer ítem de una lista desordenada.</li>
+                    <li>Segundo íten de una lista desordenada.</li>
+                </ul>
+            </article>
+    
+            <article>
+                 <p>
+                    Lista ordenada:
+                 </p>
+                    <ol>
+                         <li>Primer ítem de una lista ordenada</li>
+                         <li>Segundo ítem de una lista ordenada</li>
+                    </ol>
+            </article>
+        </section>
+        <!-- Elementos Multimedia -->
+        <section id="Multimedia">
+            <h2>5. Elementos multimedia</h2>
+            <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-930x487.jpg" 
+            width="200px" height="200px" alt="Es una imagen">
+            
+            <video src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4"
+            controls width="200px" height="200px"></video>
+        
+            <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg"
+            controls></audio>
+        </section>
+        <!-- Tablas -->
+        <section id="Tablas">
+            <h2>6. Tablas</h2>
+        
+            <table>
+            
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                    </tr>
+                
+                    <tbody>
+                        <tr>
+                            <td>Dato 1</td>
+                            <td>Dato 2</td>
+                        </tr>
+                        <tr>
+                            <td>Dato 3</td>
+                            <td>Dato 4</td>
+                        </tr>
+                    </tbody>
+                
+                </thead>
+            
+            </table>
+        </section>
+
+        <!-- Formularios -->
+        <section id="Formularios">
+            <h2>7. Formularios</h2>
+            <form>
+                <label>Nombre</label>
+                <input type="text" placeholder="Ingrese su nombre">
+            
+                <label>Email</label>
+                <input type="email" placeholder="example@example.com">
+            
+                <label>Mensaje</label>
+                <textarea> </textarea>
+            
+                <button type="submit"> Enviar formulario</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>
+            <b>2024 Trabajo Práctico de HTML</b> <br> <u>Desarrollo de Sotware</u> <br>Maria Victoria Benetto
+        </p>
+    </footer>
+
+</body>
+</html>
